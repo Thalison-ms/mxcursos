@@ -1,0 +1,32 @@
+div[id="teste1"]{
+    width: 700px;
+    height: 500px;
+    background-image: linear-gradient(to top, #000, transparent),
+                        url(../imagens/animal2.jpg); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-clip: padding-box;
+    background-size: cover;
+}
+
+div[id="teste2"]{
+    width: 700px;
+    height: 500px;
+    background-image: radial-gradient(red, black),
+                        url(../imagens/animal2.jpg); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-clip: padding-box;
+    background-size: cover;
+}
+
+div[id="teste3"]{
+    width: 700px;
+    height: 500px;
+    background-image: repeating-linear-gradient(to right top, #000, #fff 10px, #000 20px),
+                        url(../imagens/animal2.jpg); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-clip: padding-box;
+    background-size: cover;
+}

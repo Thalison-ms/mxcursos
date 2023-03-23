@@ -1,0 +1,29 @@
+div{
+    width: 500px;
+    height: 300px;
+    padding: 10px;
+    border: 5px solid red;
+    margin: 10px;
+}
+/*
+Caso inspecione o elemento verá que o valor total é de 530x330, mas pq? sendo que aplicamos o tamanho de 500x300
+Isso, ocorre, pois aplicamos mais algumas propriedades como:
+padding, seria o espaçamento interno entre o conteúdo e a borda, como foi adicionado 10px, contabiliza 10px para todos os lados, ficando 520 x 320
+border, seria a borda que fica do lado externo do padding e conteúdo, foi adicionado 5px, contabilizando para todos os lados totaliza 530x330
+Caso seja necessário atingir o tamanho necessário, deve ser inserido os valores no width e height já subtraindo os valores de padding e border
+
+Essa situação do calculo pode ser corrigida com a utilização de outra funcionalidade abaixo
+*/
+
+div:empty{
+    width: 500px;
+    height: 300px;
+    padding: 10px;
+    border: 5px solid red;
+    margin: 10px;
+    box-sizing: border-box;
+}
+/*
+Fazendo o uso de border-box o sistema irá entender que tudo deve ter o tamanho de 500x300, fazendo isso o sistema irá reduzir automátimente o conteúdo para 470x270,
+tendo assim o valor real que deseja
+*/

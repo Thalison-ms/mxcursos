@@ -1,0 +1,90 @@
+div[id="teste1"]{
+    width: 200px;
+    height: 200px;
+    background: black;
+    border-radius: 100%;
+    margin: auto;
+
+    animation-name: pular1;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes pular1{
+    from{
+        transform: translate(0,0);
+    }
+    to{
+        transform: translate(0, 100px);
+    }
+}
+
+
+div[id="teste2"]{
+    width: 200px;
+    height: 200px;
+    background: black;
+    border-radius: 100%;
+    margin: auto;
+
+    animation-name: pular2;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 1.3s;
+    /*animation-fill-mode: initial; define em que momento será feito as alterações*/
+    /*animation-play-state: paused; define um momento para pausar/iniciar o efeito*/
+}
+@keyframes pular2{
+    0%{
+        transform: translate(0,0);
+    }
+    25%{
+        transform: translate(0,25px);
+    }
+    50%{
+        transform: translate(0,50px);
+    }
+    75%{
+        transform: translate(0,75px);
+    }
+    to{
+        transform: translate(0, 100px);
+    }
+}
+
+div[id="teste3"]{
+    width: 200px;
+    height: 200px;
+    background: rgb(185, 8, 8);
+    border-radius: 100%;
+    margin: auto;
+
+    animation-name: pular3;
+    animation-duration: 1s;
+    animation-timing-function: unset;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 1.6s;
+    /*animation-fill-mode: initial; define em que momento será feito as alterações*/
+    /*animation-play-state: paused; define um momento para pausar/iniciar o efeito*/
+}
+@keyframes pular3{
+    0%{
+        transform: translate(0,0);
+    }
+    25%{
+        transform: translate(0,25px);
+    }
+    50%{
+        transform: translate(0,50px);
+    }
+    75%{
+        transform: translate(0,75px);
+    }
+    to{
+        transform: translate(0, 100px);
+    }
+}

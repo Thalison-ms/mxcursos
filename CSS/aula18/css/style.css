@@ -1,0 +1,31 @@
+p[id="teste1"]{
+    width: 700px;
+    height: 380px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-image: url(../imagens/logo.png),
+                      url(../imagens/animal3.jpg);
+    background-repeat: no-repeat;
+    background-position: right bottom, center;
+    /*background-blend-mode: darken; Adiciona transparência entre as imagens*/
+    background-size: auto, cover;
+}
+
+p[id="teste2"]{
+    text-align: center;
+    width: 700px;
+    height: 380px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-image: url(../imagens/paisagem.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 20px dashed red;
+    background-origin: border-box; /*faz com que o border seja aplicado a partir de um elemento */
+    background-clip: content-box; /*define o limite onde será aplicado a imagem*/
+    background-size: cover;/*Faz imagem caber no espaço da imagem, se pequeno encolhe, se grande estica.*/
+    /*contain tenta ocupar 100% da área, porém respeita a proporção do elemento
+    também pode ser utilizado porcentagem ou px como:
+    background-size: 50%;
+    */
+}

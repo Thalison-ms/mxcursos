@@ -1,0 +1,9 @@
+div{
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+    /*border-radius: 20px;*/                /*Arredonda todos os lados*/
+    /*border-top-left-radius: 50px;*/       /*Arredonda um lado específico*/
+    /*border-radius: 20px 0px 20px 0;*/          /*Arrendonda todos os lados, passando um valor pra cada em uma unica linha*/
+    border-radius: 200px;                   /*Se utilizado um valor da mesma dimensão do elemento irá virar um círculo*/
+}

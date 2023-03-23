@@ -1,0 +1,8 @@
+@font-face{
+    font-family: Aladin;
+    src:local(Aladin), url("../fonts/Aladin-Regular.ttf")
+}
+
+h1{
+    font-family: Aladin;
+}

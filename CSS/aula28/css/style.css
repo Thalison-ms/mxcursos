@@ -1,0 +1,22 @@
+div{
+    text-align: center;
+    background-color: #CCC;
+    color: #000;
+    /*display: inline; Faz com que a propriedade div que é em bloco se torne inline*/
+    display: inline-block;
+    width: 49%;
+}
+
+span{
+    text-align: center;
+    background: #000;
+    color: #fff;
+    /*display: none;    Oculta a propriedade*/
+    display: inline-block;
+    width: 49%;
+}
+
+/*
+Fazendo uso do inline-block com width a 49% os blocos irão ficar lado a lado
+Fazendo uso do block irá ocorre uma quebra de linha após o bloco
+*/

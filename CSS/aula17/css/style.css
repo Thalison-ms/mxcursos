@@ -1,0 +1,26 @@
+div{
+    width: 700px;
+    height: 500px;
+    background-color: black;
+    background-image: url(../imagens/paisagem.jpg);
+    background-repeat: no-repeat; /*Faz com que a imagem não se repita*/
+    background-position: center; /*Faz com que a imagem seja centralizada*/
+    /*background-position: 10px 10px; Faz com que a imagem se afaste do layout fornecido*/
+    /*background-color: rgba(0, 0, 0, .5)              ALPHA é o .5*/
+    background-attachment: fixed; /*Faz com que a imagem fique fixada na página quando rola o scroll do mouse*/
+    /*
+    background: #000 url(../imagens/paisagem.jpg) no-repeat 0 0 fixed;
+    Essa seria a forma curta dos 5 estilos passado acima
+    */
+}
+
+/*
+Hexadecimal
+Fazendo uso do #
+rgb, irá usar valores
+rgba, usa os valores com alpha, podendo adicionar transparência
+*/
+
+body{
+    height: 1200px;
+}

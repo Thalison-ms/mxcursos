@@ -1,0 +1,47 @@
+header h1{
+    font-variant: small-caps;   /*Deixa tudo maiusculo, respeitando a primeira letra*/
+}
+header h2{
+    font-variant: small-caps;
+    font-variant-caps: all-small-caps; /*Em conjunto com small-cap acima irá deixar tudo maiusculo*/
+}
+
+header h3{
+    font-variant: small-caps;
+    font-variant-caps: all-small-caps; /*Em conjunto com small-cap acima irá deixar tudo maiusculo*/
+    font-variant-numeric: diagonal-fractions; /*Faz com que um numero fique mais alto que a letra*/
+}
+
+article[id="teste1"]{
+    font-size: 20px;
+}
+
+article p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    /*Outros tipos de font-size
+    2em = Se basea no elemento pai, caso o pai seja 20px, logo essa fonte será 40px
+    Tomar cuidado no uso do 2em, pois pode ocorrer emprevistos
+    */
+    font-weight: bold; /*Deixa em negrito*/
+}
+
+p span{
+    font-size: 2em;
+    font-style: italic;
+}
+/*Nesse exemplo seria um problema, pois articles é o elemento pai, tendo 20px
+no p foi usado 2em, logo, p é igual a 40px
+como span é filho de p, span vale 80px
+para resolver isso existe a opção 2rem, ou seja, sempre irá validar o elemento pai principal
+*/
+
+div{
+    font-weight: bold;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p[id="teste2"] span{
+    font-size: 2rem;
+    font-weight: bold;
+}

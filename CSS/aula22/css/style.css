@@ -1,0 +1,10 @@
+p{
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: justify;
+    box-sizing: border-box;
+    /*word-break: break-all;      Faz quebrar qualquer caractere*/
+    overflow-wrap: break-word;     /*Só quebra se a palavra for estourar*/
+    hyphens: auto;                  /*Onde existir quebra de palavra irá ter um hífem*/
+}

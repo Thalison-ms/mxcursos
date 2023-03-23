@@ -1,0 +1,28 @@
+/*p{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+Nessa configuração é passado a característica de forma individual*/
+
+/*
+p{
+    margin: 50px;
+}
+Dessa forma é passado de modo geral, ou seja, todos os lados*/
+
+/*
+p{
+    
+    margin: 50px 20px 50px 20px;
+    aqui é possível passar todos os lados em uma unica linha ou então fazer uso do comando abaixo que é mais reduzido
+    border: 1px solid red;
+    margin: 50px 200px
+}*/
+
+p{
+    width: 300px;
+    border: 1px solid red;
+    margin: auto;           /*Margin é uma forma interessante também para centralizar um objeto, no caso fazendo uso do auto*/
+}

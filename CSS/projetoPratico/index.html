@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"><!--View port é a área onde será exibido o site, então aqui definimos que a largura do viewport
+        vai depender inicialmente do dispositivo, inicial scale é para quando der zoom, os componentes não serão reposicionados-->
+        <title>Projeto Final</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <header class="top">
+            <div class="container"><!--Essa div não existia, no processo de estilização foi  verificado que seria necessário essa div para criar um flexbox-->
+                <a href="">
+                    <img src="https://via.placeholder.com/200x100?text-Logo" alt="Logo do Site">
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <hr> <!--Adiciona separador entre as seções-->
+            <h1>Nulla consectetur excepteur aliqua ea incididunt sint.</h1>
+            <p>Laboris sunt exercitation ea nostrud prodent qui ut nulla ex laborum mollit culpa. Incididunt qui magna minim voluptate culpa.</p>
+    </header>
+    <hr>
+    <!--SECTION 1----------------------->
+    <section class="call-to-action">
+        <header>
+            <h2>excepteur aliqua ea incididunt sint</h2>
+            <a href="#">Saiba mais</a>
+        </header>
+    </section>
+    <hr>
+    <!--SECTION 2----------------------->
+    <section id="about" class="page page-about">
+        <div class="container"><!--Essa div não existia, no processo de estilização foi  verificado que seria necessário essa div para criar um flexbox-->
+            <aside>
+                <img src="https://via.placeholder.com/200x400?text-About" alt="About">
+            </aside>
+            <article>
+                <header>
+                    <h2>About</h2>
+                </header>
+                <p>Laboris sunt exercitation ea nostrud proident qui ut nulla ex laborum mollit
+                    culpa. Incididunt qui magna minim voluptate culpa.
+                </p>
+                <ul>
+                    <li>prident qui ut nulla</li>
+                    <li>prident qui ut nulla</li>
+                    <li>prident qui ut nulla</li>
+                </ul>
+                <a href="#">Saiba mais</a>
+            </article>
+    </div>
+    </section>
+    <hr>
+    <!--SECTION 3----------------------->
+    <section id="services" class="page page-service">
+        <div class="container"><!--Essa div não existia, no processo de estilização foi  verificado que seria necessário essa div para criar um flexbox-->
+            <header>
+                <h2>Services we provide</h2>
+                <p>Laboris sunt exercitation ea nostrud proident qui ut nulla ex laborum mollit
+                    culpa. Indididunt qui magna minim voulptate culpa.
+                </p>
+            </header>
+            <div class="flex-container">
+                <article>
+                    <figure>
+                        <img src="https://via.placeholder.com/50x50" alt="Branding">
+                    </figure>
+                    <header>
+                        <h3>Branding</h3>
+                        <p>Laboris sunt exercitation ea nostrud proident qui ut.</p>
+                    </header>
+                </article>
+                <article>
+                    <figure>
+                        <img src="https://via.placeholder.com/50x50" alt="Design">
+                    </figure>
+                    <header>
+                        <h3>Design</h3>
+                        <p>Laboris sunt exercitation ea nostrud proident qui ut.</p>
+                    </header>
+                </article>
+                <article>
+                    <figure>
+                        <img src="https://via.placeholder.com/50x50" alt="Development">
+                    </figure>
+                    <header>
+                        <h3>Development</h3>
+                        <p>Laboris sunt exercitation ea nostrud proident qui ut.</p>
+                    </header>
+                </article>
+                <article>
+                    <figure>
+                        <img src="https://via.placeholder.com/50x50" alt="Rocket Science">
+                    </figure>
+                    <header>
+                        <h3>Rocket Science</h3>
+                        <p>Laboris sunt exercitation ea nostrud proident qui ut.</p>
+                    </header>
+                </article>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <!--SECTION 4----------------------->
+    <section id="contact" class="page page-contact">
+        <div class="container"><!--Essa div não existia, no processo de estilização foi  verificado que seria necessário essa div para criar um flexbox-->
+            <header>
+                <h2>Get in Touch</h2>
+            </header>
+            <div class="flex-container">
+                <form action="" method="POST">
+                    <div>
+                        <label>
+                            <input type="text" name="nome" placeholder="Seu Nome">
+                        </label>
+                    </div>
+
+                    <div>
+                        <label>
+                            <input type="text" name="email" placeholder="Seu E-mail">
+                        </label>
+                    </div>
+
+                    <div>
+                        <label>
+                            <textarea name="mensagem" cols="30" rows="10" placeholder="Sua mensagem"></textarea>
+                        </label>
+                    </div>
+
+                    <button type="submit">Enviar</button>
+                </form>
+                <aside class="description">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, donec odio. Quisque volutpat mattis eros, Nullam malesuada erat ut turpis. Suspendisse urna nibh,
+                        viverra non, semper suscipit, posuere a, pede.Suspendisse urna nibh,
+                        viverra non, semper suscipit, posuere a, pede.
+                    </p>
+                    <address>
+                        <p>1600 Pensylvania Ave NW, Washington, DC 20500, United States of America.</p>
+                        <p>T: (202)456-1111</p>
+                        <p>M: (202)456-1212</p>
+                    </address>
+                    <ul>
+                        <li><a href="#">F</a></li>
+                        <li><a href="#">T</a></li>
+                        <li><a href="#">G</a></li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Todos os direitos reservados</p>
+            <a href="#">&uarr;</a>
+        </div>
+    </footer>
+
+    </body>
+</html>

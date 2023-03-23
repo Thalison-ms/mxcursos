@@ -1,0 +1,29 @@
+USER SELECT - Impedir que os usuários selecionem texto
+
+div{
+    user-select: none;
+}
+-----------------------------------------
+DROP SHADOW - Adicionar sombra em uma imagem transparente
+
+img{
+    filter: drop-shadow (5px 5px 5px #111)
+}
+-----------------------------------------
+SCROLL SUAVE - Quando você clicar em visitar uma seção será aplicado uma rolagem SUAVE
+
+html{
+    scroll-behavior: smooth;
+}
+-----------------------------------------
+IMAGE RENDERING - Dimensionar imagem sem perder qualidade
+
+img{
+    image-rendering: pixelated;
+}
+-----------------------------------------
+SCROLL PADDING TOP - A propriedade define descolamento no topo quando houver um scroll de links
+
+html{
+    scroll-padding-top: 50px;
+}

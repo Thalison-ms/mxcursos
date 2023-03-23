@@ -1,0 +1,11 @@
+figure{
+    float: left;
+}
+/*O elemento irá flutuar ao lado de outro elemento*/
+
+h3{
+    clear: left;
+}
+/*O clear irá quebrar o fluxo do float acima, podendo ser usando tanto left como right
+também é possível usar o both, que anula ambos os lados, é utilizado para organizar layouts
+*/

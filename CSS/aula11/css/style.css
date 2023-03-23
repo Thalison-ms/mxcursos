@@ -1,0 +1,7 @@
+p{
+    border: 5px solid;
+    border-top-width: 10px;
+    border-style: dashed;
+    border-color: blue;
+    border-top-color: cadetblue;
+}

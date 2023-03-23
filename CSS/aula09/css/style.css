@@ -1,0 +1,24 @@
+/*
+p{
+    border: 1px solid red;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+Dessa forma é passado a característica item por item*/
+
+/*p{
+    border: 1px solid red;
+    padding: 10px;
+}
+Dessa forma é passado as características em um comando só para todos os lados*/
+
+p{
+    border: 1px solid red;
+    padding: 10px 20px 10px 20px; /*top right bot left*/
+    /*como existe elementos repetidos, ainda poderiamos reduzir para
+    padding: 10px 20px;
+    ou seja, o topo e a base será 10px e esquerda e direita serão 20px
+    */
+}

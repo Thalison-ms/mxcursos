@@ -1,0 +1,16 @@
+/*
+p{
+    border: 1px solid red;
+    width: 300px;
+    height: 300px;
+    line-height: 20px;
+}
+Aqui estamos definindo dimesões fixas*/
+
+p{
+    border: 1px solid red;
+    /*min-width: 300px;*/ /*Caso esse min seja utilizado e o conteúdo seja grande e exija um espaço maior, o conteúdo irá expandir*/
+    max-width: 300px;  /*Caso o max seja utilizado, o conteudo não irá ultrapassar o valor informado, jogando os valores seguintes para abaixo*/
+    max-height: 100px;  /*Caso o max seja utilizado, o conteúdo irá vazar, ou seja, sair do layout que foi específicado, pois o conteudo exige um espaço maior*/
+    line-height: 20px;    
+}

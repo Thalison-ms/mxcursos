@@ -1,0 +1,15 @@
+.post{
+    width: 50%;
+    height: 200px;
+    float: left;
+}
+.post.post-class{
+    background-color: #CCCCCC;
+}
+
+#top{
+    background-color: #CCCCCC;
+    border: 1px solid #000000;
+    text-align: center;
+}
+/*Se eu preciso compartilhar estilos, usa-se class, se eu preciso de algo que seja unico, usa ID*/

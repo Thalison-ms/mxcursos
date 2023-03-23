@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Vincular Estilo CSS no HTML</title>
+        <style>
+            @import url('css/import.css'); /*Não é recomendado fazer uso do importa em alguns casos, pois dependendo da situação, pode afetar o desempenho*/
+            h1{
+                background-color: #000000;
+                color: #FFFFFF;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Curso de CSS3</h1>
+        <p style="border: 1px solid #000000;">Cascading Style Sheets é um mecanismo para adicionar estilo a um documento web.
+            Em vez de colocar a formtação dentro do documento, o css cria um link para uma
+            página que conté os estilos. Quando quiser alterar a aparência do portal, 
+            basta modificar apenas um arquivo.</p>
+    </body>
+</html>

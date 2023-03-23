@@ -1,0 +1,52 @@
+a:visited{
+    color: blueviolet;
+}
+/*A opção que está sendo visitada irá mudar de cor*/
+
+a:hover{
+    color: black;
+}
+/*Quando passar mouse por cima irá mudar de cor*/
+a:active{
+    color: red;
+}
+/*Quando clicar na opção irá mudar de cor*/
+
+/*ul li{
+    background-color: #CCCCCC;
+}
+Irá alterar a propriedade de todos os li dentro de ul*/
+
+ul li:first-child{
+    background-color: #CCCCCC;
+}
+/*Irá alterar o primeiro elemento filho*/
+
+ul li:last-child{
+    background-color: #CCCCCC;
+}
+/*Irá alterar o ultimo elemento filho*/
+
+ul li:nth-child(2n){
+    background-color: cadetblue;
+}
+/*Irá pegar elementos conforme o valor passado, 2n pega os elementos pares, 2n + 1 pega os elementos impares*/
+
+/*li:nth-last-of-type(2n){
+    background-color: beige;
+}
+aqui no caso irá fazer a mesma coisa que no de cima, a diferença é que vai validar em todos li*/
+
+div:empty{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+}
+/*Busca por divs vazias*/
+
+input:enabled{
+    background: rgb(185, 212, 235);
+}
+input:disabled{
+    background: rgb(175, 175, 175);
+}

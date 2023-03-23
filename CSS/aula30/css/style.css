@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+}
+
+header{
+    background: #000;
+    padding: 10px 0;
+}
+header h1{
+    color: #FFF;
+    text-align: center;
+    margin: 0;
+}
+section{
+    padding: 20px 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 500px;
+}
+article{
+    border: 1px solid #ccc;
+    background: #FFF;
+    padding: 10px;
+    /*Propriedades abaixo está relacionado a escala dos elementos, eles anulam justify-content, deve-se verificar o witch também, pois a escala irá respeitar o tamanho da largura*/
+    flex-grow: 0;  /*Escala do tamanho maior, 0 é o tamanho dos elementos relacionado ao conteúdo, 1 é para ocupar todo espaço disponível*/         
+    flex-shrink: 1;         
+    flex-basis: 100px;
+    width: 250px;
+    /*Função resumida dos 3 flex acima
+    flex: 0 1 auto*/
+}
+article h2{
+    margin: 0;
+    text-transform: uppercase;
+}
+/*Alterando ordens individualmente*/
+article:nth-child(1){
+    order: 2;
+}
+article:nth-child(2){
+    order: 1;
+}
+article:nth-child(3){
+    order: 3;
+    align-self: flex-end;        /*Alinha uma única propriedade, */
+}
+article:nth-child(4){
+    order: 4;
+    flex-grow: 0; /*
+    Irá fazer com que ocupe o espaço restante*/
+    /*flex-shrink: 2;   Caso utilizado shrink o elemento irá ocupar metade do container se comparado aos demais, pois ele define a escala do menor elemento
+    OBS: Se atentar ao width, pois influencia no tamanho, caso já tenha um padrão*/
+    flex-basis: 250px; /*define a largura exata dos elemento referente aos outros*/
+}

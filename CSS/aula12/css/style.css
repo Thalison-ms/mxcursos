@@ -1,0 +1,12 @@
+table{
+    /*border-collapse: collapse;*/       /*Tabela junta*/
+    border-collapse: separate;          /*Tabela separada*/
+    border-spacing: 5px;                /*Espaçamento entre as bordas*/
+    width: 500px;
+    margin: auto;
+}
+
+table th, table td{
+    border: 1px solid #CCCCCC
+    
+}

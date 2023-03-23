@@ -1,0 +1,22 @@
+/*
+section div{
+    border: 2px solid #000000;
+    margin-top: 25px;
+}
+No exemplo acima informamos que todos os elementos que estiverem dentro de DIV terão essas caracteristicas*/
+
+/*
+section > div {
+    border: 2px solid #000000;
+}
+Nesse exemplo acima iremos atribuir as caracteristicas somente aos DIV que são filho de section*/
+
+/*
+section > header + div{
+    background-color: #cccccc;
+}
+Na situação acima estamos indicando que a unica div a ser estilizada será a primeira após o header*/
+
+section > header ~ div{
+    background-color: #CCCCCC;
+}

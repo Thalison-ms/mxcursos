@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+}
+
+header{
+    background: #000;
+    padding: 10px 0;
+}
+
+header h1{
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
+
+section{
+    height: 500px;
+    padding: 20px 0;
+    background: rgba(0,0,0, 0.5);
+    display: flex; /*Irá organizar em formato FLEX CONTAINER, lado a lado*/
+    flex-direction: row; /*row para ordem normal e row-reverse para inverter a ordem dos elementos*/
+    /*flex-direction: column; muda o estilo para formato coluna*/
+    /*flex-direction: column-reverse; no estilo coluna irá inverter a ordem dos elementos*/
+    flex-wrap: nowrap; /*Redimensiona o elemento e faz com que não exista quebra de linha no flex, caso utilize o wrap irá ter quebra de linha*/
+    /*width: 60%;  Aqui diminuimos a largura para realizar o teste do redimensionamento do elemento para caber no container*/
+    /*flex-flow: row nowrap; Será utilizado para atribuir os valores de flex-direction e flex-wrap em uma só linha*/
+    justify-content: space-between; /*
+    flex-start da esquerda para direita
+    flex-end da direita para esquerda
+    space-aroung organiza no centro com espaçamento nas laterais
+    space-between irá organizar ao centro mas com os elementos nas extremidades
+    space-evenly, quase mesma coisa que o aroung, porém o espaçamento nas extremidades é maior
+    center, irá centralizar todos os containers
+    */
+    align-items: baseline;/*
+    baseline - alinha o container no topo
+    flex-end - alinha o container na parte de baixo
+    center - alinha ao centro
+    stretch - irá tentar ocupar todo espaço do container
+    */
+    align-content: center;/*
+    É quase igual o justify-content, só que no eixo Y, porém ele só irá funcionar se tiver mais de 1 linha, ou seja, usar com flex-wrap: wrap; 
+    Também deve ser verificado a width para ver se não está afetando o estilo do align-content
+    */
+
+}
+
+article{
+    border: 1px solid #ccc;
+    background: #fff;
+    padding: 10px;
+    width: 250px; /*Remover essa linha para testar o align-content*/
+}
+article h2{
+    margin: 0;
+    text-transform: uppercase;
+}
